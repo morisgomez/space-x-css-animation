@@ -1,0 +1,42 @@
+body {
+    background-image: url('https://i.imgur.com/DM7yXLn.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  @keyframes transition {
+    0% {transform: translate(-50%);}
+    50% {transform: translate(90%);}
+    100% {transform: translate(-80%);}
+  }
+  
+  #ufo {
+    animation-name: transition;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  #text-container {
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px black;
+  }
+  
+  /* media querey for screen sizes with max-width 400px */ 
+  @media (max-width: 400px) {
+    #ufo {
+    animation-name: transition;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+    
+    #text-container {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+  }
+  }
